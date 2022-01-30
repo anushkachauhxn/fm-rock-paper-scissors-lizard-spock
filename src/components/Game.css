@@ -48,3 +48,55 @@
   background-color: white !important;
   border-radius: 8px !important;
 }
+/* Result Message: Functioning */
+.game__msg {
+  display: none;
+}
+.game__msg.show {
+  display: block;
+}
+
+/* Animation On Result */
+.game__side button {
+  position: relative;
+}
+
+.game__side button::before,
+.game__side button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  animation: ripple 0.75s cubic-bezier(0.65, 0, 0.34, 1) 0s 1;
+}
+
+.game__side button::before {
+  height: calc(332px * 1.75);
+  width: calc(332px * 1.75);
+  border: 84px solid hsl(223, 44%, 21%); /* Outer Ring */
+}
+.game__side button::after {
+  height: calc(332px * 1.28);
+  width: calc(332px * 1.28);
+  background: hsl(224, 33%, 28%); /* Inner Ring */
+  border: 78px solid hsl(223, 39%, 24%); /* Middle Ring */
+}
+
+@keyframes ripple {
+  from {
+    transform: scale3d(0, 0, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* Animation: Functioning */
+.game__side button::before,
+.game__side button::after {
+  display: none;
+}
+.game__side.show button::before,
+.game__side.show button::after {
+  display: block;
+}

@@ -16,9 +16,15 @@ function Main() {
 
     const openGame = (usersPick) => {
         dispatch(setUserVal(usersPick));
-        dispatch(setCompVal());
-        dispatch(calculateResult());
-        dispatch(updateScore());
+        
+        setTimeout(() => {
+            dispatch(setCompVal());
+
+            setTimeout(() => {
+                dispatch(calculateResult());
+                dispatch(updateScore());
+            }, 500);
+        }, 1000);
 
         history.push("/game");
     }
