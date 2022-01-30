@@ -1,0 +1,50 @@
+.game {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 70px;
+  user-select: none;
+}
+
+/* Game Sides */
+.game__side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 64px;
+}
+.game__side h2 {
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.game__side img {
+  height: 300px;
+  object-fit: contain;
+}
+
+/* Result Message */
+.game__msg h1 {
+  margin-bottom: 18px;
+  font-size: 56px;
+  letter-spacing: 0.35px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+.game__msg Button {
+  width: 100% !important;
+  padding: 8px 16px !important;
+
+  font-size: 16px !important;
+  letter-spacing: 2.5px !important;
+  color: hsl(229, 25%, 31%) !important;
+  font-weight: 600 !important;
+
+  background-color: white !important;
+  border-radius: 8px !important;
+}
