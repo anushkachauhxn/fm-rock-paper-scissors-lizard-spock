@@ -40,11 +40,16 @@ export const gameSlice = createSlice({
             }
         },
         updateScore: (state) => {
-            state.score = state.score;
-            state.score += state.result;
+            state.score = parseInt(state.score);
+            state.score += parseInt(state.result);
             if (state.score < 0) {
                 state.score = 0;
             }
+            sessionStorage.setItem("score", state.score);
+        },
+        setScore: (state) => {
+            // Getting the score after page has been refreshed
+            state.score = sessionStorage.getItem("score") || 0;
         },
         resetGame: (state) => {
             state.userVal = null;
@@ -54,7 +59,7 @@ export const gameSlice = createSlice({
     },
 });
 
-export const { setUserVal, setCompVal, resetGame, calculateResult, updateScore } = gameSlice.actions;
+export const { setUserVal, setCompVal, calculateResult, updateScore, setScore, resetGame } = gameSlice.actions;
 
 export const selectUserVal = (state) => state.game.userVal;
 export const selectCompVal = (state) => state.game.compVal;
