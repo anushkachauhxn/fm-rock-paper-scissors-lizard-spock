@@ -11,6 +11,7 @@ export const gameSlice = createSlice({
       userVal: null,
       compVal: -1,
       result: null,
+      score: 0
     },
     reducers: {
         setUserVal: (state, action) => {
@@ -38,6 +39,13 @@ export const gameSlice = createSlice({
                 state.result = -1; // comp wins
             }
         },
+        updateScore: (state) => {
+            state.score = state.score;
+            state.score += state.result;
+            if (state.score < 0) {
+                state.score = 0;
+            }
+        },
         resetGame: (state) => {
             state.userVal = null;
             state.compVal = -1;
@@ -46,10 +54,11 @@ export const gameSlice = createSlice({
     },
 });
 
-export const { setUserVal, setCompVal, resetGame, calculateResult } = gameSlice.actions;
+export const { setUserVal, setCompVal, resetGame, calculateResult, updateScore } = gameSlice.actions;
 
 export const selectUserVal = (state) => state.game.userVal;
 export const selectCompVal = (state) => state.game.compVal;
 export const selectResult = (state) => state.game.result;
+export const selectScore = (state) => state.game.score;
 
 export default gameSlice.reducer;

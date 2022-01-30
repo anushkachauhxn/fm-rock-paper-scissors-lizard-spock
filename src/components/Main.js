@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { setCompVal, setUserVal, calculateResult } from '../features/gameSlice';
+import { setCompVal, setUserVal, calculateResult, updateScore } from '../features/gameSlice';
 import { useDispatch } from 'react-redux';
 import { IconButton } from '@mui/material';
 import './Main.css';
@@ -18,6 +18,7 @@ function Main() {
         dispatch(setUserVal(usersPick));
         dispatch(setCompVal());
         dispatch(calculateResult());
+        dispatch(updateScore());
 
         history.push("/game");
     }
