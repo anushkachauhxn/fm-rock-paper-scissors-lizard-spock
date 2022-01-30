@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectUserVal, selectCompVal, resetGame } from '../features/gameSlice';
+import { selectUserVal, selectCompVal, selectResult, resetGame } from '../features/gameSlice';
 import { Button, IconButton } from '@mui/material';
 import './Game.css';
 import rock from '../assets/rock.svg';
@@ -16,6 +16,7 @@ function Game() {
     const dispatch = useDispatch();
     const userVal = useSelector(selectUserVal);
     const compVal = useSelector(selectCompVal);
+    const result = useSelector(selectResult);
 
     const closeGame = () => {
         dispatch(resetGame());
@@ -23,6 +24,15 @@ function Game() {
     }
 
     const values = [rock, paper, scissors, lizard, spock];
+
+    const showResult = () => {
+        if (result === 1) {
+            return "You Win";
+        }
+        if (result === -1) {
+            return "You Lose";
+        }
+    }
 
     return (
         <div className="game">
@@ -34,8 +44,8 @@ function Game() {
                 </IconButton>
             </div>
 
-            <div className="game__msg show">
-                <h1>You Lose</h1>
+            <div className={`game__msg ${result && "show"}`}>
+                <h1>{showResult()}</h1>
                 <Button 
                     onClick={closeGame}
                     variant="contained"
