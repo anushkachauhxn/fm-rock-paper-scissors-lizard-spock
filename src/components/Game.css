@@ -100,3 +100,47 @@
 .game__side.show button::after {
   display: block;
 }
+
+/* Responsiveness - Mobile Screen */
+@media (max-width: 376px) {
+  .game {
+    margin-top: 64px;
+    column-gap: 55px;
+  }
+
+  /* Game Sides */
+  .game__side {
+    flex-direction: column-reverse;
+    row-gap: 28px;
+  }
+  .game__side h2 {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+  .game__side img {
+    height: 132px;
+    object-fit: contain;
+  }
+
+  /* Result Message */
+  .game__msg {
+    position: absolute;
+    bottom: 164px;
+  }
+  .game__msg h1 {
+    margin-bottom: 26px;
+  }
+
+  /* Animation On Result */
+  .game__side button::before {
+    height: calc(148px * 1.75);
+    width: calc(148px * 1.75);
+    border: 48px solid hsl(223, 44%, 21%); /* Outer Ring */
+  }
+  .game__side button::after {
+    height: calc(148px * 1.28);
+    width: calc(148px * 1.28);
+    background: hsl(224, 33%, 28%); /* Inner Ring */
+    border: 38px solid hsl(223, 39%, 24%); /* Middle Ring */
+  }
+}

@@ -27,3 +27,11 @@
   height: 150px;
   object-fit: contain;
 }
+
+/* Responsiveness - Mobile Screen */
+@media (max-width: 376px) {
+  .main {
+    margin-top: 24px;
+    transform: scale(0.8);
+  }
+}

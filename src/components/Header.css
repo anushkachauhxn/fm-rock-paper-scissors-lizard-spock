@@ -39,3 +39,32 @@
   color: hsl(248, 12%, 36%);
   font-weight: 700;
 }
+
+/* Responsiveness - Mobile Screen */
+@media (max-width: 376px) {
+  .header {
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .logo img {
+    height: 64px;
+    object-fit: contain;
+  }
+
+  .scorecard {
+    padding: 10px 24px;
+    border-radius: 4px;
+  }
+  .scorecard h2 {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    line-height: 10px;
+  }
+  .scorecard h1 {
+    font-size: 40px;
+    letter-spacing: normal;
+    line-height: 40px;
+  }
+}

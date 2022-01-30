@@ -49,3 +49,38 @@
 .rules__modalBody {
   margin-top: 22px;
 }
+
+/* Responsiveness - Mobile Screen */
+@media (max-width: 376px) {
+  .rules {
+    margin: 0;
+    position: absolute;
+    bottom: 55px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  /* Modal Content */
+  .rules__modal {
+    height: 100vh;
+    width: 100vw;
+    padding: 96px 32px 65px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(0, 0);
+  }
+  .rules__modalHeader {
+    justify-content: center;
+  }
+  .rules__modalHeader button {
+    position: absolute;
+    bottom: 68px;
+  }
+  .rules__modalBody {
+    margin-top: 102px;
+  }
+}
