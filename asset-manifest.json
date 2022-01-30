@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fm-rock-paper-scissors-lizard-spock/static/css/main.3ea75a5f.css",
+    "main.js": "/fm-rock-paper-scissors-lizard-spock/static/js/main.e4238a33.js",
+    "static/media/image-rules.svg": "/fm-rock-paper-scissors-lizard-spock/static/media/image-rules.6ca6952d0010d0c92e0fa452d17605a3.svg",
+    "static/media/logo.svg": "/fm-rock-paper-scissors-lizard-spock/static/media/logo.37d88e96223983cbf1d7361b2bf43f55.svg",
+    "static/media/lizard.svg": "/fm-rock-paper-scissors-lizard-spock/static/media/lizard.9b194f9b925b981f589ece93320f86c9.svg",
+    "static/media/paper.svg": "/fm-rock-paper-scissors-lizard-spock/static/media/paper.b1356c7b35c4277250e07547adf1e75e.svg",
+    "static/media/spock.svg": "/fm-rock-paper-scissors-lizard-spock/static/media/spock.a2b4c1288692999cea216d4b76012ecd.svg",
+    "static/media/scissors.svg": "/fm-rock-paper-scissors-lizard-spock/static/media/scissors.f874e1b377cdee70f2f2b20187a8699d.svg",
+    "static/media/rock.svg": "/fm-rock-paper-scissors-lizard-spock/static/media/rock.a296ee7ecaac1df25f0b1e7d4230c2d0.svg",
+    "index.html": "/fm-rock-paper-scissors-lizard-spock/index.html",
+    "static/media/bg-pentagon.svg": "/fm-rock-paper-scissors-lizard-spock/static/media/bg-pentagon.48bd9938bd76c6dd3d62.svg",
+    "static/media/bg-circle.svg": "/fm-rock-paper-scissors-lizard-spock/static/media/bg-circle.9abdd9ee7fe47c92326814089b0650cf.svg",
+    "main.3ea75a5f.css.map": "/fm-rock-paper-scissors-lizard-spock/static/css/main.3ea75a5f.css.map",
+    "main.e4238a33.js.map": "/fm-rock-paper-scissors-lizard-spock/static/js/main.e4238a33.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ea75a5f.css",
+    "static/js/main.e4238a33.js"
+  ]
+}
