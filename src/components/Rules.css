@@ -1,0 +1,51 @@
+.rules {
+  margin: 32px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* Button on Main Page */
+.rules__btn {
+  padding: 6px 42px !important;
+
+  font-size: 16px !important;
+  letter-spacing: 2.5px !important;
+  color: white !important;
+  font-weight: 600 !important;
+
+  border: 2.25px solid rgba(255, 255, 255, 0.6) !important;
+  border-radius: 10px !important;
+}
+
+/* Modal Content */
+.rules__modal {
+  padding: 28px 32px 42px;
+  background: white;
+  border-radius: 8px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rules__modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rules__modalHeader h1 {
+  font-size: 32px;
+  color: hsl(229, 25%, 31%);
+  text-transform: uppercase;
+  user-select: none;
+}
+.rules__modalHeader svg {
+  transform: scale(1.4);
+  color: hsl(232, 6%, 75%);
+}
+
+.rules__modalBody {
+  margin-top: 22px;
+}
