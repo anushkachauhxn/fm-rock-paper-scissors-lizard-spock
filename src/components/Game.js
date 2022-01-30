@@ -1,5 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectUserVal, selectCompVal, resetGame } from '../features/gameSlice';
 import { Button, IconButton } from '@mui/material';
 import './Game.css';
 import rock from '../assets/rock.svg';
@@ -11,9 +13,16 @@ import empty from '../assets/bg-circle.svg'
 
 function Game() {
     const history = useHistory();
+    const dispatch = useDispatch();
+    const userVal = useSelector(selectUserVal);
+    const compVal = useSelector(selectCompVal);
+
     const closeGame = () => {
+        dispatch(resetGame());
         history.push("/");
     }
+
+    const values = [rock, paper, scissors, lizard, spock];
 
     return (
         <div className="game">
@@ -21,7 +30,7 @@ function Game() {
                 <h2>You Picked</h2>
 
                 <IconButton disabled>
-                    <img src={scissors} alt="" />
+                    <img src={values[userVal]} alt="" />
                 </IconButton>
             </div>
 
@@ -39,7 +48,7 @@ function Game() {
                 <h2>The House Picked</h2>
 
                 <IconButton disabled>
-                    <img src={empty} alt="" />
+                    <img src={(compVal !== -1) ? values[compVal] : empty} alt="" />
                 </IconButton>
             </div>
         </div>
