@@ -1,0 +1,29 @@
+.main {
+  margin-top: 32px;
+  width: 35%;
+  background: url("../assets/bg-pentagon.svg") no-repeat;
+  background-position: top 55% center;
+  background-size: auto;
+}
+
+.main__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__btns1 {
+  justify-content: center;
+}
+.main__btns2 {
+  margin-top: -48px;
+  padding: 0 15px;
+}
+.main__btns3 {
+  margin-top: 20px;
+  padding: 0 60px;
+}
+
+.main__btns img {
+  height: 150px;
+  object-fit: contain;
+}
