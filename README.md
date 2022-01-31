@@ -192,6 +192,14 @@ const openGame = (usersPick) => {
 - [Web Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
 - [Session Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage)
 
+#### 🧠 Inspiration for Animation:
+
+- [Ripple Animation Button](https://codepen.io/chrisunderdown/pen/JeXNoz)
+
+#### ⚡ Deployment Bug:
+
+- [How to Deploy a Routed React App to GitHub Pages](https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/)
+
 ## ⭐ Author
 
 - GitHub - [@anushkachauhxn](https://github.com/anushkachauhxn)
